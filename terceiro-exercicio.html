@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1>Numero de 10 a 200</h1>
+
+    <script>
+        let n1 = Number(prompt('Digite o primeiro número:'));
+        let n2 = Number(prompt('Digite o segundo número:'));
+
+        if (n1 > n2) {
+            let i = n1;
+            let menorNumero = n2;
+
+            while (i >= menorNumero) {
+                console.log(`O número: ${i}`);
+                i--;
+            }
+        } else if (n1 < n2) {
+            let i = n1;
+            let maiorNumero = n2;
+
+            while (i <= maiorNumero) {
+                console.log(`O número: ${i}`);
+                i++;
+            }
+        } else {
+            console.log("Os números são iguais.");
+        }
+    </script>
+</body>
+</html>
