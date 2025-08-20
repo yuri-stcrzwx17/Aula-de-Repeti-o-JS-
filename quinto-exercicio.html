@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabuada com While</title>
+</head>
+<body>
+  <h2>Gerador de Tabuada</h2>
+  
+ 
+  <input type="number" id="numero">
+  <button onclick="gerarTabuada()">Calcular</button>
+
+  <script>
+
+    let n = prompt('digite o número')
+    function gerarTabuada() {
+      let n = document.getElementById("numero").value;
+      numero = Number(n); 
+
+      console.log("Número digitado pelo usuário: " + n);
+
+      let i = 0;
+      while (i <= 10) {
+        console.log(n + " x " + i + " = " + (n * i));
+        i++;
+      }
+    }
+  </script>
+</body>
+</html>
